@@ -20,6 +20,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .link.active {
   color: #2196f3;
 }
@@ -122,8 +123,8 @@ body {
 }
 .btn-studio:hover {
   box-shadow: 1px 0px 10px 3px rgba(73, 76, 105, 0.693);
-  transition-duration: 250ms;
   transform: scale(1.05);
+  background-color: #0383ed;
 }
 .portfolio-titles {
   font-weight: 700;
@@ -597,9 +598,17 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
+  outline: none;
 }
 .form-field {
+  position: relative;
+  display: block;
 }
+.form-comment:focus,
+.form-input:focus {
+  border: 1px solid #2196f3;
+}
+
 .form-comment {
   width: 448px;
   height: 120px;
@@ -608,7 +617,52 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
+  resize: none;
+  outline: none;
+}
+.form-comment::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+.form-comment::-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-comment::-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.checkbox {
+  color: #757575;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.checkbox-input {
+  display: none;
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
+.terms-link {
+  color: #2196f3;
+}
+.form-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  margin-top: 30px;
+
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2094f3;
+  align-self: center;
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.form-btn:hover {
+  box-shadow: 1px 0px 8px 3px rgba(97, 100, 122, 0.395);
+  transform: scale(1.05);
+  background-color: #0383ed;
 }
 
 /*---footer---*/
@@ -667,7 +721,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: #2094f3;
   display: flex;
   align-items: center;
   text-align: center;
@@ -678,6 +732,6 @@ img {
 }
 .footer-btn:hover {
   box-shadow: 1px 0px 10px 3px rgba(73, 76, 105, 0.693);
-  transition-duration: 250ms;
   transform: scale(1.05);
+  background-color: #0383ed;
 }

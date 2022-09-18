@@ -71,7 +71,7 @@
           DLA WASZEGO BIZNESU
         </h1>
         <p class="title-button">
-          <button type="button" class="btn-studio" data-modal-open>
+          <button type="button" class="btn-studio transition" data-modal-open>
             Zamów usługe
           </button>
         </p>
@@ -558,7 +558,7 @@
                 id="user_email"
                 placeholder="E-mail"
               />
-              <button type="submit" class="footer-btn">Zapisz się</button>
+              <button type="submit" class="footer-btn transition">Zapisz się</button>
             </div>
           </form>
         </div>
@@ -583,29 +583,38 @@
             <div class="form-field">
             <label class="form-label" for="user_name">
               Imię
-              <input class="form-input" type="text" name="username" id="user_name" />
+              <input class="form-input transition" type="text" name="username" id="user_name" />
             </div>
             </label>
             <div class="form-field">
             <label class="form-label" for="user_phone">
               Telefon
-              <input class="form-input" type="text" name="phone" id="user_phone" />
+              <input class="form-input transition" type="text" name="phone" id="user_phone" />
             </label>
             </div>
             <div class="form-field">
             <label class="form-label" for="user_email">
               Email
-              <input class="form-input" type="email" name="email" id="user_email" />
+              <input class="form-input transition" type="email" name="email" id="user_email" />
             </label>
             </div>
             <div class="form-field">
             <label class="form-label" for="user_comment">
               Komentarz
-              <textarea class="form-comment"
+              <textarea class="form-comment transition"
                 name="comment"
                 placeholder="Wprowadź tekst"
                 id="user_comment"></textarea>
             </div>
+
+            <div class="checkbox">
+              <label>
+                <input class="checkbox-input" type="checkbox" name="terms"/>
+                Oświadczam iż akceptuję 
+                <a href="#" class="terms-link"><span >Regulamin</span></a> i <a href="#" class="terms-link"><span >Politykę Prywatności.</span></a>
+              </label>
+            </div>
+            <button type="submit" class="form-btn transition">Wyślij</button>
             </label>
           </form>
         </div>
