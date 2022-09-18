@@ -550,7 +550,13 @@ img {
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
-.form {
+.close-btn:hover .close-btn-icon {
+  fill: #2196f3;
+}
+.close-btn:hover {
+  box-shadow: 0px 0px 4px 0px rgba(154, 154, 166, 0.41);
+}
+.close-btn-icon {
   fill: #0e0a0a;
   justify-content: center;
   display: inline-block;
@@ -558,13 +564,6 @@ img {
   left: 8;
   height: 11px;
   width: 11px;
-}
-
-.close-btn:hover .form {
-  fill: #2196f3;
-}
-.close-btn:hover {
-  box-shadow: 0px 0px 4px 0px rgba(154, 154, 166, 0.41);
 }
 
 /*-- form --*/
@@ -599,16 +598,12 @@ img {
   border-radius: 4px;
   margin-top: 4px;
   outline: none;
+  padding-left: 38px;
 }
 .form-field {
   position: relative;
   display: block;
 }
-.form-comment:focus,
-.form-input:focus {
-  border: 1px solid #2196f3;
-}
-
 .form-comment {
   width: 448px;
   height: 120px;
@@ -620,6 +615,11 @@ img {
   resize: none;
   outline: none;
 }
+.form-comment:focus,
+.form-input:focus {
+  border: 1px solid #2196f3;
+  fill: #2196f3;
+}
 .form-comment::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -628,6 +628,18 @@ img {
 }
 .form-comment::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.form-icon-input {
+  fill: #0e0a0a;
+  position: absolute;
+  left: 15px;
+  top: 31px;
+  height: 12px;
+  width: 12px;
+}
+.form-input:focus + .form-icon-input {
+  fill: #2196f3;
 }
 .checkbox {
   color: #757575;
